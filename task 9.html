@@ -4,41 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .body{
+            background-color: bisque;
+        }
+        form {
+         width: 400px; 
+         margin: 50px;
+         height: 300px;
+         background-color: darkblue;
+        }
+
+        .table{
+            width: 200px;
+            
+        }
+        .sib{
+            background-color: yellow;
+
+        }
+        /* .sun{
+            background-color: yellow;
+        } */
+        .tb{
+        background-color: blueviolet;
+        margin-left: 0;
+        }
+    
+        .color
+        {
+            background-color: orange;
+        }
+     
+    </style>
 </head>
 <body>
-    <form action="">
-        <table>
+    <div>
+    <form action=""  class="sib">
+        <table class="tb">
+            <tr class="color">
+                <td colspan="2">sign up</td>
+                
+            </tr>
            <tr>
             <td><label for="">first name</label></td>
-            <td><input type="enter first name"></td>
+            <td><input type="text"  placeholder="Enter firstname"></td>
            </tr> 
            <tr>
             <td><label for="">last name</label></td>
-            <td><input type="enter last name"></td>
+            <td><input type="text" placeholder="Enter lastname"></td>
            </tr>
            <tr>
             <td><label for="">DOB</label></td>
-            <td><input type="text"></td>
+            <td><input type="date"></td>
            </tr>
            <tr>
-            <td><label for=""></label></td>
-            <td><input type="text"></td>
+            <td>gender</td>
+            <td><input type="radio" name="gender">male <input type="radio" name="gender">female</td>
            </tr>
            <tr>
-            <td><label for=""></label></td>
-            <td><input type="text" name="" id=""></td>
+            <td>country</td>
+            <td>
+                <select name="" id="">
+                   <option value="">country</option>
+                   <option value="">INDIA</option>
+                   <option value="">USA</option>
+                   <option value="">SRILANKA</option>
+                   <option value="">CHINA</option>
+                   </select>
+            </td>
            </tr>
            <tr>
-            <td><label for=""></label></td>
-            <td><input type="text" name="" id=""></td>
+            <td>Email</td>
+            <td><input type="Email" placeholder="Enter E mail"></td>
            </tr>
            <tr>
-            <td><label for=""></label></td>
-            <td><input type="text" name="" id=""></td>
+            <td>phone no</td>
+            <td><input type="phone no" placeholder="Enter phone no"></td>
+           </tr>
+           <tr>
+            <td>password</td>
+            <td><input type="pssword"></td>
+           </tr>
+           <tr>
+            <td>confirm password</td>
+            <td><input type="password"></td>
+           </tr>
+           <tr>
+            <td colspan="1"></td>
+            <td><input type="checkbox">I agree to the terms of use</td>
+           </tr>
+           <tr class="sun">
+           <td colspan="1"></td> 
+           <td class="s><input type="submit"></td>
+           <td><button>cancel</button></td>
+            
            </tr>
 
         </table>
     </form>
-    
+    </div>
 </body>
 </html>

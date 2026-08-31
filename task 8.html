@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table{
+            background-color: yellow;
+        }
+        .off{
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
     <table border="1" width="50%">
         <tr>
-            <th>task</th>
-            <th>day of the weak</th>
+            <th rowspan="2">task</th>
+            <th colspan="7">day of the weak</th>
         </tr>
+
+        <tr>
+            <th>Mon</th>
+            <th>tue</th>
+            <th>wed</th>
+            <th>thu</th>
+            <th>fri</th>
+            <th>sat</th>
+            <th>sun</th>
+        </tr>
+        
         <tr>
             <td>collage</td>
             <td>java</td>
@@ -18,9 +37,11 @@
             <td>c lang</td>
             <td>python</td>
             <td>practical</td>
+            <td class="off" rowspan="2" colspan="2">OFF</td>
         </tr>
-        <tr>
-            <td></td>
+         <tr>
+            <td>Work</td>
+            <td colspan="5">Subject preparation and project work</td>
         </tr>
 
     </table>
