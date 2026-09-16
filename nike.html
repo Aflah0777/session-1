@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .top {
+            text-align: right;
+            padding:  15px;
+            background-color: lightgrey;
+        }
+
+        .top a {
+            color: black;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+        border-bottom: 1px solid #ccc;
+    }
+ 
+    .logo img {
+        font-size: 25px;
+        font-weight: bold;
+        height: 30px;
+    }
+ 
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+     .nav-links li {
+        margin-left: 25px;
+    }
+ 
+    .nav-links li a {
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+    }
+ 
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+ 
+    .nav-right input {
+        padding: 10px;
+        border: 1px solid ;
+        margin-right: 15px;
+        border-radius: 50px;
+    }
+ 
+    .nav-right span {
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="top">
+        <a href="#">Help</a>
+        <span>|</span>
+        <a href="#">Sign Up</a>
+        <span>|</span>
+        <a href="#">Login</a>
+    </div>
+
+    <div class="navbar">
+        <div class="logo">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPUAAACUCAMAAAB8x5+oAAAAaVBMVEX///8AAAD6+vr29vbx8fHT09Pj4+PX19fe3t7r6+vu7u7BwcFVVVWQkJC1tbXo6OgeHh6Dg4NbW1uXl5c5OTloaGguLi6dnZ1ycnKoqKjMzMxFRUUUFBSvr69PT0+7u7t7e3slJSULCwtAjFS9AAAEs0lEQVR4nO3biZqqIBQA4Avu4YaKIi5p7/+QN2uamkpzAXXmO/8DHD1CLAf69w8AAAAAAAAAAAAAAAAAAAAAAAAAAACwEbz1C2yBOFu/wSQYHyQ0k3/UlgdZCdYdkfnB8kCC28uDrAHrgZGzKJPRMy3XlxBFOT2wfJ6mnEgZg8woMmXEUUkzLeLVCLmepF4ZcLTvpsaBRTIWIpTwXNage6Ao2vGv+mCRvEkQ6pqZSBtytRihbKeTNbZJTt1Tl3LJMkNi4DxEhZAXT56A5B5L0UVKfZkjDz6e49LdzdW6UXm8OF1TRnVMDlLDi/MvpqykhlzM9j1et+iGVZbkVjGLc9jIkht0iYDEPEq/M0YlJabsQQdHXWRPctS5sJFxNynvKaM2s+R27Qt++Zy5/MDTmRV3ixA9KvxAxYCTX8eKzUdwTdAiadFPzNCVzKfiGp4r6EQTWFmdhqenlBF1FC0h8O0BasKPofvsNWGEwlzdVJp8jZKZsicME/S5U1+5Kn9xzddDkqPCh/Sx4+RtxihslO7+yG28rCUub0fAmumz9xmjssh0pQ8Pvr/1ivstrJuEpj0pozTyFW+C8P1zR+uUCfHBFLHbl/G5mRv1E2jefj+Pqe1UHXywjZyXvSmjNvJWKOZYNVota90WPu0Zu64Snqv/8ucXaR6eyRT2cGwK34uGMkYnl8op/n1UPY4oygqFgThmvO3L9iqUWiEZZP/4+kpmLt3ws6YYzlh6hWQQzn4sAqWvUrB9zKgb9qV6/9yyKySDxM82OMUygwcko6x3Sn4gv0IySPeent/IGkw0I6eseLObeNWQlY8dxHNLuFJ+2HZF2UOxa0gaG2sfoL40NUKLN13O0YvqMd26U1f2+iVZ47U92KLeZsRRkQ6su56eRVSVC4Z0Jx0vZhfOzJwl4zNGJV11BLuz33XEZM7CXyNNEo7PuKuQbFWqwv7bF5rcx6344xLk+csSJQmNEtTv36mZMKiaef+GsQ/b9NDU6HstPuaaB8Y6afoi9CpDb9tzNO112rpx7eGxFWuO8KZ267O23vwUzRmaVPOgL+/rFZjpGaMy4ZsfMQx08Iuisl8vcWkH0/pQFejTSrtDsgh+N1k/CptKWGZw0DuOaVvdFnlWxpcKybaHKjfamN9lEnHqdRo2epX5yqXy7pAs5MxOYpqSxesW2QeJVXJOabWr22vZCjnXMVmj4DkBV54zy43dXeKasciYImyOe5ipnuBRxZ25kljs8oo5/vzqs7lbVEhGUZc1F1tUSMZRlbVn72zU/kFJ1mGOd9vMFwqyrsW+U+60knNuJPzjRL05W+ReabbTQfvZp43meKG7xc2leSTtPsqE72hL9ZEmI+fWXeMOiUSYLs45YdWeJ+e3hutmH53qZsNa/mzakr1mu6sKyRRvTjRHSpp9VUim0GaWU2pvzTsk0jlz+jjLjV+yIuljDV96e9XSPVZIpjImpV3nxm/u2nfjW7ul5MOZ3y9ijlus8OOuqwWTaeRTtfTEfFvNH4u2pOcDR1gJFY7251K+wOLtHJbQY7DzktBSVsbux7RJ5PnW3873kXZw/t5PGAAAAAAAAAAAAAAAAAAAAAAAAAAAAIn+A2kQPd8cYqA8AAAAAElFTkSuQmCC" alt="Brand Logo">
+        </div>
+ 
+        <ul class="nav-links">
+            <li><a href="#">New & Featured</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Jordan</a></li>
+            <li><a href="#">Sale</a></li>
+        </ul>
+ 
+        <div class="nav-right">
+            <input type="text" placeholder="Search">
+            <span><i class="fa-solid fa-heart"></i></span>
+            <span><i class="fa-solid fa-lock"></i></span>
+        </div>
+    </div>
+
+</body>
+</html>
